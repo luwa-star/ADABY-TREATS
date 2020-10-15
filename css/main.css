@@ -1,7 +1,50 @@
  * {
      font-family: "EB Garamond", sans-serif;
      font-weight: 700;
-     /* font-family: 'Playfair Display', serif;*/
+     /* font-family: 'Playfair Display', serif;
+     font-family: 'Dosis', sans-serif;*/
+ }
+ /*nav bar*/
+ 
+ .navbar {
+     background-color: #2D2824!important;
+     height: 200px;
+ }
+ 
+ .navbar-brand img {
+     float: left;
+ }
+ 
+ .navbar-brand {
+     padding: 0 530px;
+     border-bottom: 0;
+ }
+ 
+ a.navbar-brand:hover {
+     background-color: #2D2824;
+     color: #fff;
+ }
+ 
+ .navbar-nav {
+     margin-bottom: 0.2rem;
+ }
+ 
+ .nav-item,
+ .nav-link {
+     margin-right: 2.4rem;
+     margin-left: 1rem;
+ }
+ 
+ a.nav-link {
+     color: #fff!important;
+ }
+ 
+ a.nav-link:hover,
+ a.nav-link:active,
+ a.nav-link:focus,
+ a.active {
+     border-bottom: 0.2rem solid #fff;
+     background: rgba(250, 250, 250, 0.2);
  }
  /* Carousel*/
  
@@ -38,14 +81,61 @@
      margin-top: 50px;
  }
  
- a:hover,
- .btn:hover {
-     background-color: grey;
+ .btn:hover,
+ .btn:active {
+     background-color: #5B6629;
      color: #fff;
+     transition: 0.3s ease-in;
  }
  
  a.carousel-control-next:hover,
  a.carousel-control-prev:hover {
      background-color: transparent;
      color: #fff;
+ }
+ 
+ .title-underline {
+     width: 12rem;
+     height: 0.32rem;
+     margin: 0 auto;
+     background: #5B6629;
+ }
+ 
+ .about-text,
+ .recipe-outline {
+     font-weight: 400;
+     font-size: 24px;
+ }
+ /* recipe section */
+ 
+ .recipe-outline {
+     border-right: 2px solid #2d2824;
+ }
+ 
+ .ingre-list,
+ .pro-list {
+     list-style-type: none;
+ }
+ 
+ .ingre-btn {
+     padding: 0.5rem;
+     background: #2D2824;
+     color: #fff;
+     font-size: 20px;
+     margin-top: 0.5rem;
+     float: right;
+ }
+ 
+ .ingre-btn:hover,
+ .ingre-btn:active {
+     background: #5B6629;
+     transition: 0.3s ease-in;
+ }
+ 
+ .title {
+     font-size: 34px;
+ }
+ 
+ .caption {
+     font-size: 40px;
  }

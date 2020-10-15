@@ -11,104 +11,299 @@
     <script src="./js/all.js"></script>
     <!--google fonts-->
     <link href='http://fonts.googleapis.com/css?family=EB+Garamond:400,500,700' rel='stylesheet' type='text/css'>
-    <!--<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet">-->
+
     <!-- main CSS-->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
-    <!--Carousel Section-->
-    <section id="carousel">
-        <div class="container-fluid">
-            <div class="row">
-                <div id="example" class="carousel slide" data-ride="carousel">
-                    <!--indicators-->
-                    <ol class="carousel-indicators">
-                        <li data-target="#example" data-slide-to="0" class="active"></li>
-                        <li data-target="#example" data-slide-to="1"></li>
-                        <li data-target="#example" data-slide-to="2"></li>
-                        <li data-target="#example" data-slide-to="3"></li>
+<body data-spy="scroll" data-target="#navbarlinks">
+    <!--Home-->
+    <div id="home">
+        <!--Navbar-->
+        <nav class="col-md-12 navbar navbar-expand-md navbar-light bg-light">
+            <!--logo-->
+            <div class="navbar-main">
+                <a class="navbar-brand" href="#home">
+                    <img src="./img/logo4_invert.jpg" width="150px" height="150px" alt="adaby-treats">
+                </a>
 
-                    </ol>
-                    <!--images-->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/ss1.jpg" class="d-block w-100" alt="...">
-                            <div class="black-overlay"></div>
-                            <div class="carousel-caption d-none d-sm-block text-center text-light">
-                                <blockquote class="blockquote text-center">
-                                    <p class="display-4"><i class=" fas fa-quote-left fa-2x mr-3 "></i>One cannot think well, love well, sleep well, if one has not dined well.</p>
-                                    <h2>
-                                        <footer class="blockquote-footer text-capitalize text-right text-light">
-                                            Virginia Woolf
-                                        </footer>
-                                    </h2>
-                                </blockquote>
-                                <a href="# " class="btn btn-lg btn-outline-light font-weight-bold text-uppercase ">place an order</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarlinks" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <!--end of logo-->
+                <div class="collapse navbar-collapse" id="navbarlinks">
+                    <ul class="navbar-nav text-uppercase font-weight-bold">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    menu
+                  </a>
+                            <div class="dropdown-submenu">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item dropdown-toggle" href="#">cake</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">birthday</a>
+                                        <a class="dropdown-item" href="#">anniversary</a>
+                                        <a class="dropdown-item" href="#">valentine</a>
+                                        <a class="dropdown-item" href="#">special occasion</a>
+
+                                    </div>
+                                    <a class="dropdown-item dropdown-toggle" href="#">drinks</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">cake parfait</a>
+                                        <a class="dropdown-item" href="#">smoothie</a>
+                                        <a class="dropdown-item" href="#">yoghurt</a>
+                                        <a class="dropdown-item" href="#">ice-cream</a>
+                                    </div>
+                                    <a class="dropdown-item dropdown-toggle" href="#">snacks</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">small chops</a>
+                                        <a class="dropdown-item" href="#">cookies</a>
+                                        <a class="dropdown-item" href="#">samosa</a>
+                                        <a class="dropdown-item" href="#">chicken pie/ meat-pie</a>
+                                        <a class="dropdown-item" href="#">doughnuts</a>
+                                    </div>
+                                    <a class="dropdown-item dropdown-toggle" href="#">salad</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">ceasar salad</a>
+                                        <a class="dropdown-item" href="#">fruit salad</a>
+                                        <a class="dropdown-item" href="#">coleslaw salad</a>
+                                    </div>
+                                    <a class="dropdown-item" href="#recipe">recipes</a>
+
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#academyform">adaby treats academy</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown" href="#blog">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">about  us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactus">contact  us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!--end of navbar-->
+        <!--Carousel Section-->
+        <section id="carousel">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="example" class="carousel slide" data-ride="carousel">
+                        <!--indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#example" data-slide-to="0" class="active"></li>
+                            <li data-target="#example" data-slide-to="1"></li>
+                            <li data-target="#example" data-slide-to="2"></li>
+                            <li data-target="#example" data-slide-to="3"></li>
+
+                        </ol>
+                        <!--images-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/ss1.jpg" class="d-block w-100" alt="...">
+                                <div class="black-overlay"></div>
+                                <div class="carousel-caption d-none d-sm-block text-center text-light">
+                                    <blockquote class="blockquote text-center">
+                                        <p class="display-4"><i class=" fas fa-quote-left fa-1x mr-3 "></i>One cannot think well, love well, sleep well, if one has not dined well.</p>
+                                        <h2>
+                                            <footer class="blockquote-footer text-capitalize text-right text-light">
+                                                Virginia Woolf
+                                            </footer>
+                                        </h2>
+                                    </blockquote>
+                                    <a href="# " class="btn btn-lg btn-outline-light font-weight-bold text-uppercase ">place an order</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="./img/ss2.jpg " class="d-block w-100 " alt="... ">
+                                <div class="black-overlay "></div>
+                                <div class="carousel-caption d-none d-sm-block text-center text-light ">
+                                    <blockquote class="blockquote text-center ">
+                                        <p class="display-4"><i class="fas fa-quote-left fa-1x mr-3 "></i>There is no love sincerer than the love of food.</p>
+                                        <h2>
+                                            <footer class="blockquote-footer text-capitalize text-right text-light ">
+                                                George Bernard Shaw
+                                            </footer>
+                                        </h2>
+                                    </blockquote>
+                                    <a href="# " class="btn btn-lg btn-outline-light font-weight-bold text-uppercase ">place an order</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="./img/ss3.jpg " class="d-block w-100 " alt="... ">
+                                <div class="black-overlay "></div>
+                                <div class="carousel-caption d-none d-sm-block text-center text-light ">
+                                    <blockquote class="blockquote text-center ">
+                                        <p class="display-4"><i class="fas fa-quote-left fa-1x mr-3 "></i>Part of the secret of success in life is to eat what you like and let the food fight it out inside.</p>
+                                        <h2>
+                                            <footer class="blockquote-footer text-capitalize text-right text-light ">
+                                                Mark Twain
+                                            </footer>
+                                        </h2>
+                                    </blockquote>
+                                    <a href="# " class="btn btn-lg btn-outline-light font-weight-bold text-uppercase ">place an order</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="./img/gal13.jpg " class="d-block w-100 " alt="... ">
+                                <div class="black-overlay "></div>
+                                <div class="carousel-caption d-none d-sm-block text-center text-light ">
+                                    <blockquote class="blockquote text-center ">
+                                        <p class="display-4"><i class="fas fa-quote-left fa-1x mr-3 "></i>I am not a glutton - I am an explorer of food.</p>
+                                        <h2>
+                                            <footer class="blockquote-footer text-capitalize text-right text-light ">
+                                                Erma Bombeck
+                                            </footer>
+                                        </h2>
+                                    </blockquote>
+                                    <a href="# " class="btn btn-lg btn-outline-light font-weight-bold text-uppercase ">place an order</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item ">
-                            <img src="./img/ss2.jpg " class="d-block w-100 " alt="... ">
-                            <div class="black-overlay "></div>
-                            <div class="carousel-caption d-none d-sm-block text-center text-light ">
-                                <blockquote class="blockquote text-center ">
-                                    <p class="display-4"><i class="fas fa-quote-left fa-2x mr-3 "></i>There is no love sincerer than the love of food.</p>
-                                    <h2>
-                                        <footer class="blockquote-footer text-capitalize text-right text-light ">
-                                            George Bernard Shaw
-                                        </footer>
-                                    </h2>
-                                </blockquote>
-                                <a href="# " class="btn btn-lg btn-outline-light font-weight-bold text-uppercase ">place an order</a>
-                            </div>
-                        </div>
-                        <div class="carousel-item ">
-                            <img src="./img/ss3.jpg " class="d-block w-100 " alt="... ">
-                            <div class="black-overlay "></div>
-                            <div class="carousel-caption d-none d-sm-block text-center text-light ">
-                                <blockquote class="blockquote text-center ">
-                                    <p class="display-4"><i class="fas fa-quote-left fa-2x mr-3 "></i>Part of the secret of success in life is to eat what you like and let the food fight it out inside.</p>
-                                    <h2>
-                                        <footer class="blockquote-footer text-capitalize text-right text-light ">
-                                            Mark Twain
-                                        </footer>
-                                    </h2>
-                                </blockquote>
-                                <a href="# " class="btn btn-lg btn-outline-light font-weight-bold text-uppercase ">place an order</a>
-                            </div>
-                        </div>
-                        <div class="carousel-item ">
-                            <img src="./img/gal13.jpg " class="d-block w-100 " alt="... ">
-                            <div class="black-overlay "></div>
-                            <div class="carousel-caption d-none d-sm-block text-center text-light ">
-                                <blockquote class="blockquote text-center ">
-                                    <p class="display-4"><i class="fas fa-quote-left fa-2x mr-3 "></i>I am not a glutton - I am an explorer of food.</p>
-                                    <h2>
-                                        <footer class="blockquote-footer text-capitalize text-right text-light ">
-                                            Erma Bombeck
-                                        </footer>
-                                    </h2>
-                                </blockquote>
-                                <a href="# " class="btn btn-lg btn-outline-light font-weight-bold text-uppercase ">place an order</a>
-                            </div>
-                        </div>
+                        <!--controls-->
+                        <a class="carousel-control-prev" href="#example" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#example" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <!--controls-->
-                    <a class="carousel-control-prev" href="#example" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#example" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!--end of carousel section-->
+    </div>
+    <!--end of Home-->
+    <!--ABOUT US SECTION-->
+    <section id="aboutus" class="py-5">
+        <div class="container">
+            <!--title -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h1 class="display-4 text-uppercase text-dark mb-0">
+                        <strong>about us</strong>
+                    </h1>
+                    <div class="title-underline"></div>
+                    <div class="about-text py-3 text-left">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nostrum neque, culpa sunt harum autem officia placeat facere, obcaecati inventore ab assumenda accusantium quas deserunt at, nobis repudiandae dolore exercitationem sit et! Ipsum ratione reprehenderit
+                        vel cum, quisquam ab vero nihil libero tempore, officiis numquam rem.
+                    </div>
+                </div>
+            </div>
+            <!-- end of title -->
+        </div>
+    </section>
+    <!--end of about us section-->
+    <!--recipe section-->
+    <section id="recipe" class="py-5">
+        <div class="container">
+            <!--title -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h1 class="display-4 text-uppercase text-dark mb-0">
+                        <strong>recipes</strong>
+                    </h1>
+                    <div class="title-underline"></div>
+
+                </div>
+            </div>
+            <!-- end of title -->
+            <div class="row my-4">
+                <div class="col-md-4 py-1 bg-light recipe-outline">
+                    <h3 class="caption text-capitalize text-center "><strong>ceasar salad</strong></h3>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae laborum enim dicta non voluptatum unde.</div>
+                    <h4 class=" text-capitalize pt-4 title ">Ingredients</h4>
+                    <ul class="ingre-list">
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                    </ul>
+                    <h4 class="text-capitalize title">procedure</h4>
+                    <ul class="pro-list">
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam maiores eius fugiat vitae numquam dignissimos, facere consectetur eos officia?</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsam.</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, odit?</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi explicabo iste culpa dolorem fugit commodi!</li>
+                    </ul>
+                    <a href="#" class="btn btn-md font-weight-bold text-capitalize ingre-btn">read more >></a>
+                    <!--add modal on click read more later!!-->
+                </div>
+                <div class="col-md-4 py-1 bg-light recipe-outline">
+                    <h3 class="caption text-capitalize text-center "><strong>coconut rice</strong></h3>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae laborum enim dicta non voluptatum unde.</div>
+                    <h4 class="text-capitalize pt-4 title">Ingredients</h4>
+                    <ul class="ingre-list">
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                    </ul>
+                    <h4 class="text-capitalize title">procedure</h4>
+                    <ul class="pro-list">
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam maiores eius fugiat vitae numquam dignissimos, facere consectetur eos officia?</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsam.</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, odit?</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi explicabo iste culpa dolorem fugit commodi!</li>
+                    </ul>
+                    <a href="#" class="btn btn-md font-weight-bold text-capitalize ingre-btn ">read more >></a>
+                    <!--add modal on click read more later!!-->
+
+                </div>
+                <div class="col-md-4 py-1 bg-light recipe-outline">
+                    <h3 class="caption text-capitalize text-center"><strong>banana ice-cream</strong></h3>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae laborum enim dicta non voluptatum unde.</div>
+                    <h4 class="text-capitalize pt-4 title">Ingredients</h4>
+                    <ul class="ingre-list">
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+                        <li>- 5 teaspoon Lorem, ipsum dolor.</li>
+
+
+                    </ul>
+                    <h4 class="text-capitalize title">procedure</h4>
+                    <ul class="pro-list">
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam maiores eius fugiat vitae numquam dignissimos, facere consectetur eos officia?</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsam.</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, odit?</li>
+                        <li>- Lorem ipsum dolor sit amet consectetur Officiis, atque? dolor sit amet consectetur adipisicing elit. Repellendus, laboriosam. Modi explicabo iste culpa dolorem fugit commodi!</li>
+                    </ul>
+                    <a href="#" class="btn btn-md font-weight-bold text-capitalize ingre-btn">read more >></a>
+                    <!--add modal on click read more later!!-->
+
                 </div>
             </div>
 
         </div>
     </section>
-    <!--end of carousel section-->
-
+    <!--contact us-->
 
 
     <!---External js file-->
